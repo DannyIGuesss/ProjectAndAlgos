@@ -50,18 +50,18 @@
 
 //write a function that takes in three parameters
 
-// const insertAt = (arr,index,value) => {
-//     for(let i = arr.length - 1; i >= index; i--) {
-//         arr[i + 1] = arr[i]
-//     }
+const insertAt = (arr,index,value) => {
+    for(let i = arr.length - 1; i >= index; i--) {
+        arr[i + 1] = arr[i]
+    }
 
-//     arr[index] = value
+    arr[index] = value
 
-//     return arr
-// }
+    return arr
+}
 
-// console.log(insertAt([100,200,5], 2, 311));
-// console.log(insertAt([9,33,7], 1, 42));
+console.log(insertAt([100,200,5], 2, 311));
+console.log(insertAt([9,33,7], 1, 42));
 
 // BONUS RemoveAt 
 
