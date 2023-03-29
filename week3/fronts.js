@@ -38,25 +38,25 @@ class SLL {
             return nodeData
         }
     }
+
+    // Display assignment
+
+    display() {
+        let runner = this.head
+        let list = []
+        while(runner !== null) {
+            list.push(runner.data)
+            runner = runner.next
+        }
+        return list
+    }
 }
 
 //ASSIGNMENT STARTS HERE
 
 let SLL1 = new SLL()
-// // SLL1.removeFront()
-// // console.log(SLL1);
-console.log(SLL1.front());
-SLL1.addFront(18)
-// console.log(SLL1.front()); 
-SLL1.addFront(14)
-// // console.log(SLL1);
-// // SLL1.removeFront()
-// console.log(SLL1);
-
-
-//testing for front
-
-console.log(SLL1.front());
-SLL1.removeFront()
-console.log(SLL1.front());
+SLL1.addFront(12)
+SLL1.addFront(456)
+SLL1.addFront(3.34)
+console.log(SLL1.display()); 
 console.log(SLL1);
